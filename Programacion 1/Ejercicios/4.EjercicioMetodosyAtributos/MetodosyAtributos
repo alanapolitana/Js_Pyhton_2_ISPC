@@ -1,0 +1,90 @@
+""" 4.1. Ejercicio práctico atributos
+Luego del análisis de la clase de Motovehículo, nos hemos dado cuenta que además de las info que se guarda en dicha clase, necesitamos agregar:
+•Año de patentamiento - SOLO AÑO.
+•Color.
+•Capacidad del tanque.
+
+Además se necesita modificar el programa, de manera que se puedan ingresar n cantidad de motos, ya que se necesita que podamos brindar la siguiente información:
+•Cantidad de motos con menos de 1000km
+•Cantidad de motos patentadas en 2021.
+
+Le dejamos la solución del ejercicio dado, pero se les recomienda intentar varias veces hasta que salga la solución antes de ver la misma.
+ """
+
+class Moto: 
+    
+    def __init__(self, marca, modelo, patente, kilometraje,añoPatentamiento,color,capacidadTanque ):
+        self.Marca = marca
+        self.Modelo= modelo
+        self.Patente= patente
+        self.Kilometraje= kilometraje
+        self.AñoPatentamiento= añoPatentamiento
+        self.Color= color
+        self.CapacidadTanque= capacidadTanque
+
+    def get_Marca(self):
+        return self.Marca
+
+    def set_Marca(self, marca):
+        self.Marca = marca 
+    
+    def get_Modelo(self):
+        return self.Modelo
+
+    def set_Modelo(self, modelo):
+        self.Modelo = modelo
+
+    def get_Patente(self):
+        return self.Patente
+
+    def set_Patente(self, patente):
+        self.Patente = patente
+
+    def get_Kilometraje(self):
+        return self.Kilometraje
+
+    def set_Kilometraje(self, kilometraje):
+        self.Kilometraje = kilometraje
+    
+    def get_Color(self):
+        return self.Color
+
+    def set_Color(self, color):
+        self.Color = color
+
+    def get_CapacidadTanque(self):
+        self.CapacidadTanque
+
+    def set_CapacidadTanque(self, capacidadTanque):
+        self.CapacidadTanque= capacidadTanque
+
+    def getAñoPatentamiento(self):
+        return self.AñoPatentamiento
+
+    def set_AñoPatentamiento(self,añoPatentamiento):
+        self.AñoPatentamiento = añoPatentamiento
+ 
+    def MostrarDatos(self):
+        print('La marca de la moto es:' + self.Marca + 
+        ' modelo: ' + self.Modelo + 
+        'su patente es: '+ self.Patente + 
+        'y el kilometraje es: '+ str(self.Kilometraje) +
+        'su color es: '+ self.Color + 
+        'y el Año de patentamiento  es: ' + str(self.AñoPatentamiento) +
+        'la capacidad del tanque es: ' + str(self.CapacidadTanque)
+        )
+    
+    def MotosConMenosDe1000km(self):
+        for i in zip(self):
+            if(self.kilometraje <1000):
+                menos1000km = menos1000km+1
+        
+        return menos1000km
+    
+    def Patentes2021(self):
+        
+        for i in zip(self):
+            if(self.añoPatentamiento == 2021):
+                patentadasEn2021= patentadasEn2021 + 1
+        
+        return patentadasEn2021
