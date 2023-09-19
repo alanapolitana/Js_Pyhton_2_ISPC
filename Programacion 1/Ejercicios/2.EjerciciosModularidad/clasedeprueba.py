@@ -29,8 +29,9 @@ except Exception as e:
     print(e)
 
 
-
-
+#https://git-scm.com/docs
+#https://www.atlassian.com/es/git
+#https://git-scm.com/docs/git
 
 
 

@@ -29,7 +29,7 @@ class Institucion_Educativa(Construccion):
     return Construccion.__str__(self) + "Esta institución educativa alberga " + self.alumnos + " estudiantes los cuales estan distribuidos en " + self.aulas + " aulas y tienen a su disposición " + self.cantinas + " cantina/s y " + self.bibliotecas + " biblioteca/s.\n"
   
 
-colegio_san_herrera = Institucion_Educativa("San Herrera", "6167", "2", "9", "1120", "20", "2", "1")
+colegio_san_herrera = Institucion_Educativa("San Herrer", "6167", "2", "9", "1120", "20", "2", "1")
 empire_state = Construccion("Empire State", "8094", "102", "443,5")
 
 print(colegio_san_herrera)
