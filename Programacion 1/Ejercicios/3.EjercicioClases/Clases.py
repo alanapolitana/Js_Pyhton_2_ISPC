@@ -53,7 +53,9 @@ class Moto:
         self.Kilometraje = kilometraje
 
     def __str__(self):
-        return ('La marca de la moto es:' + self.Marca + ' modelo: ' + self.Modelo + 'su patente es: '+ self.Patente + 'y el kilometraje es: 'str(self.Kilometraje))
+        return ('La marca de la moto es: ' + self.Marca + ' modelo: ' + self.Modelo + ' su patente es: ' + self.Patente + ' y el kilometraje es: ' + str(self.Kilometraje))
+
+      
 
 marca= input('Ingrese la marca de la moto.')
 modelo= input('Ingrese el modelo de la moto.')
@@ -62,4 +64,4 @@ kilometraje= input('Ingrese el kilometraje de la moto.')
 
 miMoto= Moto(marca,modelo,patente,kilometraje)
 
-miMoto.__str__()
+print(str(miMoto))
